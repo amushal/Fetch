@@ -1,13 +1,10 @@
 # Fetch
 
-At Ad Hoc, our front-end applications often exchange JSON data with various RESTful APIs. We use modern JavaScript
-to interact with these APIs and to transform their responses into a format needed by the client application. In
-this homework, we provide a sample API with a single endpoint and ask you to write some JavaScript to request data from
-the API and transform the response.
+Retrieve JSON data with javascript fetch RESTful APIs. JavaScript front-end to request data from
+the API and transform the response from local back-end server app "Fetch-API" in NodeJS with a single endpoint /records.
 
 ## Records API
-
-You'll be provided with a `/records` API endpoint that returns a JSON array of items in the following format:
+`/records` API endpoint that returns a JSON array of items in the following format:
 
 ```json
 [
@@ -66,15 +63,6 @@ In `api/managed-records.js`, write a function named `retrieve` that requests dat
 - **nextPage**: The page number for the next page of results, or `null` if this is the last page.
 
 5. Return a promise from `retrieve` that resolves with the transformed data.
-
-## Additional requirements
-
-- Use the [provided URI library](https://medialize.github.io/URI.js/) to construct the request URL.
-- Write your solution using ES2015 or later. Any methods and syntax [supported by Babel are fair game](https://babeljs.io/docs/en/learn#ecmascript-2015-features).
-- You must [use the Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) to interact with the `records` endpoint.
-- Don't add any additional libraries or edit any files other than `api/managed-records.js`
-- We've provided a suite of unit tests. Your solution should pass all tests.
-- Please delete the `node_modules` directory before submitting your completed homework.
 
 ## Setup
 
